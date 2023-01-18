@@ -1,0 +1,792 @@
+@font-face {
+  font-family: "Oswald";
+  src: url("./static/fonts/Oswald-SemiBold.ttf") format("truetype");
+  src: url("./static/fonts/Oswald-ExtraLight.ttf") format("truetype");
+  src: url("./static/fonts/Oswald-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Oswald-light";
+  src: url("./static/fonts/Oswald-ExtraLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto-Sans";
+  src: url("./static/fonts/NotoSans-Regular.ttf") format("truetype");
+}
+@-webkit-keyframes es-pulse {
+  0% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes es-pulse {
+  0% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes es-pulse2 {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgb(212, 129, 36);
+    border-radius: 50%;
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(175, 82, 24, 0);
+    border-radius: 50%;
+  }
+  to {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(175, 82, 24, 0);
+    border-radius: 50%;
+  }
+}
+@keyframes es-pulse2 {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgb(212, 129, 36);
+    border-radius: 50%;
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(175, 82, 24, 0);
+    border-radius: 50%;
+  }
+  to {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(175, 82, 24, 0);
+    border-radius: 50%;
+  }
+}
+@-webkit-keyframes es-pulse3 {
+  0% {
+    transform: scale(1);
+    filter: brightness(1);
+  }
+  70% {
+    transform: scale(1.2);
+    filter: brightness(3);
+  }
+  to {
+    transform: scale(1);
+    filter: brightness(1);
+  }
+}
+@keyframes es-pulse3 {
+  0% {
+    transform: scale(1);
+    filter: brightness(1);
+  }
+  70% {
+    transform: scale(1.2);
+    filter: brightness(3);
+  }
+  to {
+    transform: scale(1);
+    filter: brightness(1);
+  }
+}
+@-webkit-keyframes es-pulse4 {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgb(241, 222, 211);
+  }
+  70% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 10px rgba(175, 82, 24, 0.439);
+  }
+  to {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(178, 108, 64, 0.291);
+  }
+}
+@keyframes es-pulse4 {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgb(241, 222, 211);
+  }
+  70% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 10px rgba(175, 82, 24, 0.439);
+  }
+  to {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(178, 108, 64, 0.291);
+  }
+}
+img {
+  max-width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#es-essentiale-forte.es-essentiale-forte {
+  background-color: #fff;
+  color: #000;
+  line-height: 1.2;
+  font-size: 16px;
+  min-height: 400px;
+  max-width: 960px;
+  min-width: 320px;
+  padding: 0;
+  margin: 0;
+  font-family: "Oswald";
+  margin: 0 auto;
+  
+}
+#es-essentiale-forte.es-essentiale-forte .es-kv {
+  min-height: 700px;
+  background-image: url(./static/images/kv_bg.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-start;
+  align-self: flex-end;
+}
+#es-essentiale-forte.es-essentiale-forte .es-kv__img {
+  align-self: flex-end;
+  width: 250px;
+  padding: 0 40px;
+  margin-left: 50px;
+}
+#es-essentiale-forte.es-essentiale-forte .es-kv__title {
+  align-self: flex-end;
+  padding: 0 10px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  margin-left: -20px;
+}
+#es-essentiale-forte.es-essentiale-forte .es-kv__title p {
+  font-size: 50px;
+  font-family: "Oswald";
+  font-style: italic;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 2px 1px 6px #000;
+  color: #fff;
+}
+#es-essentiale-forte.es-essentiale-forte .es-kv__title p sup {
+  font-size: 20px;
+  margin: 10px;
+}
+#es-essentiale-forte.es-essentiale-forte .es-nav {
+  margin: 20px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#es-essentiale-forte.es-essentiale-forte .es-nav__single {
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#es-essentiale-forte.es-essentiale-forte .es-nav__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 45px;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 2px 1px 1px #000;
+  font-size: 18px;
+  background-color: #f27400;
+}
+#es-essentiale-forte.es-essentiale-forte .es-nav__link:hover {
+  transition: 1s all ease-in-out;
+  background: #f27400;
+  background: linear-gradient(191deg, #f27400 0%, rgb(226, 152, 15) 81%);
+  box-shadow: inset -3px 1px 31px -3px rgb(214, 211, 114);
+}
+#es-essentiale-forte.es-essentiale-forte .es-section__title {
+  margin: 0 auto;
+  margin-top: 20px;
+}
+#es-essentiale-forte.es-essentiale-forte .es-section__title p {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 45px;
+  font-family: "Oswald";
+  font-style: italic;
+  font-weight: 600;
+  margin: 0;
+}
+#es-essentiale-forte.es-essentiale-forte .es-section__title p sup {
+  font-size: 16px;
+  vertical-align: 120%;
+}
+#es-essentiale-forte.es-essentiale-forte .es-section__title--subtitle {
+  margin: 15px 0;
+}
+#es-essentiale-forte.es-essentiale-forte .es-section__title--subtitle p {
+  font-size: 35px;
+  text-align: center;
+}
+#es-essentiale-forte.es-essentiale-forte .es-sectionBreak {
+  margin: 40px 0;
+}
+#es-essentiale-forte.es-essentiale-forte .es-when {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#es-essentiale-forte.es-essentiale-forte .es-when__text {
+  font-size: 25px;
+  text-align: center;
+  line-height: 1.2;
+  font-family: "Oswald-light";
+  font-weight: bolder;
+}
+#es-essentiale-forte.es-essentiale-forte .es-when__text strong {
+  font-family: "Oswald";
+}
+#es-essentiale-forte.es-essentiale-forte .es-when__iconsCtn {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+#es-essentiale-forte.es-essentiale-forte .es-when__iconsCtnRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#es-essentiale-forte.es-essentiale-forte .es-when__iconsSingle {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+#es-essentiale-forte.es-essentiale-forte .es-when__iconsSingle img {
+  width: 120px;
+  -webkit-animation: es-pulse2 2s infinite;
+          animation: es-pulse2 2s infinite;
+}
+#es-essentiale-forte.es-essentiale-forte .es-when__iconsSingle p {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+}
+#es-essentiale-forte.es-essentiale-forte .es-effect {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#es-essentiale-forte.es-essentiale-forte .es-effect__text p {
+  font-size: 25px;
+  font-weight: 200;
+  font-family: "Oswald-light";
+  font-weight: bolder;
+}
+#es-essentiale-forte.es-essentiale-forte .es-effect__text sup {
+  font-size: 15px;
+}
+#es-essentiale-forte.es-essentiale-forte .es-effect__text strong {
+  font-family: "Oswald";
+}
+#es-essentiale-forte.es-essentiale-forte .es-effect__iconsCtn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+#es-essentiale-forte.es-essentiale-forte .es-effect__iconsSingle {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 300px;
+  margin: 20px;
+}
+#es-essentiale-forte.es-essentiale-forte .es-effect__iconsSingle img {
+  width: 120px;
+  -webkit-animation: es-pulse2 2s infinite;
+          animation: es-pulse2 2s infinite;
+}
+#es-essentiale-forte.es-essentiale-forte .es-effect__subtitle {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+#es-essentiale-forte.es-essentiale-forte .es-effect__desc {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 200;
+  font-family: "Oswald-light";
+  font-weight: bolder;
+  line-height: 1.2;
+}
+#es-essentiale-forte.es-essentiale-forte .es-doubleDoze {
+  background-image: url(./static/images/section-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#es-essentiale-forte.es-essentiale-forte .es-doubleDoze__imgCtn {
+  position: relative;
+  position: -1;
+}
+#es-essentiale-forte.es-essentiale-forte .es-doubleDoze__liver {
+  margin-top: -40px;
+  width: 350px;
+  z-index: 100;
+  position: relative;
+}
+#es-essentiale-forte.es-essentiale-forte .es-doubleDoze__liverShadow {
+  position: absolute;
+  width: 400px;
+  left: 0;
+  top: -35px;
+  z-index: 0;
+  -webkit-animation: es-pulse3 2s infinite;
+          animation: es-pulse3 2s infinite;
+}
+#es-essentiale-forte.es-essentiale-forte .es-doubleDoze__textCtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+#es-essentiale-forte.es-essentiale-forte .es-doubleDoze__text {
+  font-size: 50px;
+  font-family: "Oswald";
+  font-style: italic;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 2px 1px 6px #000;
+  color: #fff;
+  margin: 0;
+}
+#es-essentiale-forte.es-essentiale-forte .es-doubleDoze__text sup {
+  font-size: 25px;
+  margin: 5px;
+}
+#es-essentiale-forte.es-essentiale-forte .es-doubleDoze__textBigger {
+  margin: 0;
+  font-size: 60px;
+  font-family: "Oswald";
+  font-style: italic;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 2px 1px 6px #000;
+  color: #fff;
+}
+#es-essentiale-forte.es-essentiale-forte .es-benefits {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  overflow: hidden;
+}
+#es-essentiale-forte.es-essentiale-forte .es-benefits__text p {
+  font-size: 25px;
+  font-weight: 200;
+  font-family: "Oswald-light";
+  font-weight: bolder;
+}
+#es-essentiale-forte.es-essentiale-forte .es-benefits__text strong {
+  font-family: "Oswald";
+}
+#es-essentiale-forte.es-essentiale-forte .es-benefits__MainCtn {
+  display: flex;
+}
+#es-essentiale-forte.es-essentiale-forte .es-benefits__secondCtn {
+  display: flex;
+}
+#es-essentiale-forte.es-essentiale-forte .es-benefits__secondCtn img {
+  width: 400px;
+  align-self: center;
+}
+#es-essentiale-forte.es-essentiale-forte .es-benefits__thirdCtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#es-essentiale-forte.es-essentiale-forte .es-benefits__textCtn--regeneracja {
+  margin-top: 120px;
+  margin-right: -80px;
+  -webkit-transition: ease-in-out 0.8s;
+  -o-transition: ease-in-out 0.8s;
+  transition: ease-in-out 0.8s;
+  -webkit-transform: translateX(-600px);
+  -ms-transform: translateX(-600px);
+  transform: translateX(-600px);
+  transition-delay: 500ms;
+}
+#es-essentiale-forte.es-essentiale-forte .es-benefits__textCtn--ochrona {
+  margin-left: -40px;
+  -webkit-transition: ease-in-out 0.8s;
+  -o-transition: ease-in-out 0.8s;
+  transition: ease-in-out 0.8s;
+  -webkit-transform: translateX(600px);
+  -ms-transform: translateX(600px);
+  transform: translateX(600px);
+}
+#es-essentiale-forte.es-essentiale-forte .es-benefits__textCtn--wzmocnienie {
+  margin-top: 60px;
+  margin-left: -40px;
+  -webkit-transition: ease-in-out 0.8s;
+  -o-transition: ease-in-out 0.8s;
+  transition: ease-in-out 0.8s;
+  -webkit-transform: translateX(600px);
+  -ms-transform: translateX(600px);
+  transform: translateX(600px);
+  transition-delay: 1000ms;
+}
+#es-essentiale-forte.es-essentiale-forte .es-benefits__subtitle {
+  color: #e85400;
+  font-style: italic;
+  font-size: 20px;
+}
+#es-essentiale-forte.es-essentiale-forte .es-benefits__desc {
+  font-family: "Oswald-light";
+  font-weight: bolder;
+  line-height: 1.2;
+  font-size: 20px;
+}
+#es-essentiale-forte.es-essentiale-forte .es-benefits__claim {
+  text-align: center;
+  font-size: 20px;
+}
+#es-essentiale-forte.es-essentiale-forte .es-benefits__claim p {
+  font-family: "Oswald-light";
+  font-weight: bolder;
+}
+#es-essentiale-forte.es-essentiale-forte .es-sectionImg {
+  position: relative;
+}
+#es-essentiale-forte.es-essentiale-forte .es-sectionImg__content {
+  position: absolute;
+  right: 50px;
+  top: 25%;
+}
+#es-essentiale-forte.es-essentiale-forte .es-sectionImg__text {
+  font-size: 45px;
+  font-family: "Oswald";
+  font-style: italic;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 2px 1px 6px #000;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+}
+#es-essentiale-forte.es-essentiale-forte .es-sectionImg__bigger {
+  font-size: 60px;
+  font-family: "Oswald";
+  font-style: italic;
+  line-height: 1;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 2px 1px 6px #000;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+}
+#es-essentiale-forte.es-essentiale-forte .es-doze {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+#es-essentiale-forte.es-essentiale-forte .es-doze__iconsCtn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+#es-essentiale-forte.es-essentiale-forte .es-doze__iconSingle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+}
+#es-essentiale-forte.es-essentiale-forte .es-doze__iconSingle img {
+  width: 120px;
+  -webkit-animation: es-pulse2 2s infinite;
+          animation: es-pulse2 2s infinite;
+}
+#es-essentiale-forte.es-essentiale-forte .es-doze__subtitle {
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.2;
+  font-size: 25px;
+  font-weight: 600;
+}
+#es-essentiale-forte.es-essentiale-forte .es-doze__claim {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Oswald-light";
+  font-weight: bolder;
+  line-height: 1.2;
+}
+#es-essentiale-forte.es-essentiale-forte .es-liverCheck {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#es-essentiale-forte.es-essentiale-forte .es-liverCheck__title p {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+#es-essentiale-forte.es-essentiale-forte .es-liverCheck__subtitle p {
+  font-size: 30px;
+  margin-top: 20px;
+  padding-top: 0;
+  font-weight: 200;
+  font-family: "Oswald-light";
+  font-weight: bolder;
+}
+#es-essentiale-forte.es-essentiale-forte .es-liverCheck__logo {
+  width: 220px;
+  margin-bottom: 40px;
+}
+#es-essentiale-forte.es-essentiale-forte .es-liverCheck__qr {
+  width: 220px;
+}
+#es-essentiale-forte.es-essentiale-forte .es-cross {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./static/images/cross-bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 60%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+#es-essentiale-forte.es-essentiale-forte .es-cross__mainCtn {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#es-essentiale-forte.es-essentiale-forte .es-cross__singleProduct {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#es-essentiale-forte.es-essentiale-forte .es-cross__packshot {
+  width: 250px;
+}
+#es-essentiale-forte.es-essentiale-forte .es-cross__packshot:hover {
+  scale: 1.05;
+  transition: 0.5s all ease-in-out;
+}
+#es-essentiale-forte.es-essentiale-forte .es-cross__name p {
+  color: #fff;
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-shadow: 2px 1px 6px #000;
+}
+#es-essentiale-forte.es-essentiale-forte .es-cross__desc p {
+  color: #fff;
+  font-size: 20px;
+  margin-top: 0;
+  text-shadow: 2px 1px 6px #000;
+}
+#es-essentiale-forte.es-essentiale-forte .es-cross__link {
+  margin: 30px;
+}
+#es-essentiale-forte.es-essentiale-forte .es-cross__link a {
+  background-color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  font-family: "Oswald";
+  font-weight: 600;
+  font-size: 20px;
+  padding: 5px 30px;
+  border-radius: 25px;
+  box-shadow: 11px 7px 25px -11px rgb(66, 68, 90);
+  -webkit-animation: es-pulse4 2s infinite;
+          animation: es-pulse4 2s infinite;
+}
+#es-essentiale-forte.es-essentiale-forte .es-cross__link a:hover {
+  transition: 1s;
+  background-color: transparent;
+  outline: 3px solid #fff;
+  color: #fff;
+}
+#es-essentiale-forte.es-essentiale-forte .es-footer {
+  background-color: #f27400;
+  margin-top: 0;
+  padding-bottom: 0;
+}
+#es-essentiale-forte.es-essentiale-forte .es-footer__logoCtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+#es-essentiale-forte.es-essentiale-forte .es-footer__logoCtn p {
+  color: #fff;
+  font-size: 12px;
+}
+#es-essentiale-forte.es-essentiale-forte .es-footer__claims {
+  margin: 20px;
+  border-bottom: 1px solid #fff;
+}
+#es-essentiale-forte.es-essentiale-forte .es-footer__claims p {
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.2;
+  font-family: "Oswald-light";
+  font-weight: bolder;
+}
+#es-essentiale-forte.es-essentiale-forte .es-footer__end {
+  padding: 10px;
+}
+#es-essentiale-forte.es-essentiale-forte .es-footer__end p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+  font-family: "Oswald-light";
+  font-weight: bolder;
+}
+
+@media (max-width: 800px) {
+  #es-essentiale-forte.es-essentiale-forte .es-sectionImg__text {
+    font-size: 5vw;
+  }
+  #es-essentiale-forte.es-essentiale-forte .es-sectionImg__bigger {
+    font-size: 6vw;
+  }
+}
+@media (max-width: 700px) {
+  #es-essentiale-forte.es-essentiale-forte .es-kv {
+    background-image: url(./static/images/kv-bg-mobile.png);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #es-essentiale-forte.es-essentiale-forte .es-kv__img {
+    align-self: center;
+    margin-left: 0;
+    padding: 0;
+    width: 280px;
+  }
+  #es-essentiale-forte.es-essentiale-forte .es-kv__title {
+    align-self: center;
+    margin-left: 0;
+    padding: 0 10px;
+  }
+  #es-essentiale-forte.es-essentiale-forte .es-kv__title p {
+    font-size: 40px;
+    text-align: center;
+  }
+  #es-essentiale-forte.es-essentiale-forte .es-nav {
+    flex-direction: column;
+  }
+  #es-essentiale-forte.es-essentiale-forte .es-nav__single {
+    min-width: 200px;
+    text-align: center;
+  }
+  #es-essentiale-forte.es-essentiale-forte .es-doubleDoze {
+    background-size: cover;
+    justify-content: center;
+  }
+  #es-essentiale-forte.es-essentiale-forte .es-doubleDoze__liver {
+    margin-top: -40px;
+  }
+  #es-essentiale-forte.es-essentiale-forte .es-doubleDoze__text {
+    text-align: center;
+    margin-top: 0;
+  }
+  #es-essentiale-forte.es-essentiale-forte .es-benefits__MainCtn {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #es-essentiale-forte.es-essentiale-forte .es-benefits__secondCtn {
+    display: none;
+  }
+  #es-essentiale-forte.es-essentiale-forte .es-benefits__text {
+    text-align: center;
+  }
+  #es-essentiale-forte.es-essentiale-forte .es-benefits__textCtn--regeneracja {
+    margin-top: 0;
+    margin-right: 0;
+  }
+  #es-essentiale-forte.es-essentiale-forte .es-benefits__textCtn--ochrona {
+    margin-left: 0;
+  }
+  #es-essentiale-forte.es-essentiale-forte .es-benefits__textCtn--wzmocnienie {
+    margin-top: 0;
+    margin-left: 0;
+  }
+  #es-essentiale-forte.es-essentiale-forte .es-liverCheck__subtitle {
+    text-align: center;
+  }
+  #es-essentiale-forte.es-essentiale-forte .es-cross {
+    background-image: none;
+    background: linear-gradient(0deg, #f27400 76%, #fff 24%);
+  }
+  #es-essentiale-forte.es-essentiale-forte .es-cross__mainCtn {
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  #es-essentiale-forte.es-essentiale-forte .es-doubleDoze__textCtn {
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  #es-essentiale-forte.es-essentiale-forte .es-doubleDoze__text {
+    font-size: 30px;
+  }
+  #es-essentiale-forte.es-essentiale-forte .es-doubleDoze__textBigger {
+    font-size: 40px;
+  }
+}
+
+#es-essentiale-forte.es-essentiale-forte 
+.es-benefits__textCtn.es-benefits__textCtnActive{
+  -webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px);
+}
